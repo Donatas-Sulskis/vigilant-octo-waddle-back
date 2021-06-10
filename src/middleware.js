@@ -31,7 +31,6 @@ module.exports = {
       req.user = user;
       next();
     } catch (error) {
-      console.log(error);
       return res.status(500).send({ error: 'Unexpected error occurred' });
     }
   },
